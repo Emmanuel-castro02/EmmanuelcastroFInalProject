@@ -1,0 +1,103 @@
+
+<!--doctype html -->
+<!-- pirate.html                    Emmanuel castro -->
+<!-- Simple page that translates words/phrases from      -->
+<!-- English to pirate at the click of a button.         -->
+<!-- =================================================== -->
+
+<html>
+ <head>
+   <title> Pirate Translator </title>
+ </head>
+
+ <body>
+<div style="text-align:right">
+<img src="pirate1.jpeg" alt="No Image" height=200 width=200
+	onmouseover=src="pirate2.jpeg" alt="No Image" height=200 width=200
+          onmouseout=src="pirate1.jpeg" alt="No Image" height=200 width=200;">
+</div>
+   <h3>Land Lubber's Pirate Translator</h3>
+   <p>Simply click on the buttons to translate
+      words and/or phrases from English to pirate talk.
+   </p>
+   <p>
+	Greeting:
+     <input type="button" value="Hello" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'ahoy ';">
+     <input type="button" value="Pardon me" 
+            onclick="document.getElementById('outputDiv').innerHTML = 
+                       document.getElementById('outputDiv').innerHTML + 'avast ';">
+     <input type="button" value="Excuse me" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'arrr ';">
+<br>
+	People:
+	<input type="button" value="Sir" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'mattey ';">
+     <input type="button" value="madam" 
+            onclick="document.getElementById('outputDiv').innerHTML = 
+                       document.getElementById('outputDiv').innerHTML + 'proud beauty ';">
+     <input type="button" value="stranger" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'scurvy dog  ';">
+      <input type="button" value="officer" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'foul blaggart  ';">
+
+<br>
+	Questions:
+	<input type="button" value="Where is " 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'whar be ';">
+     <input type="button" value="can you help me find " 
+            onclick="document.getElementById('outputDiv').innerHTML = 
+                       document.getElementById('outputDiv').innerHTML + 'know ye ';">
+     <input type="button" value="how far is it to" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'how many leagues to ';">
+      <input type="button" value="is that " 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'be that ';">
+<br>
+	Articles:
+	<input type="button" value="the " 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'th ';">
+     <input type="button" value="nearby " 
+            onclick="document.getElementById('outputDiv').innerHTML = 
+                       document.getElementById('outputDiv').innerHTML + 'broadside ';">
+     <input type="button" value="my" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'me ';">
+      <input type="button" value="your " 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'yer ';">
+<br>
+	Place:
+	<input type="button" value="restroom " 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'head ';">
+     <input type="button" value="restaurant " 
+            onclick="document.getElementById('outputDiv').innerHTML = 
+                       document.getElementById('outputDiv').innerHTML + 'galley ';">
+     <input type="button" value="hotel" 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'fleabag inn ';">
+      <input type="button" value="bank " 
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'buried treasure ';">
+
+
+
+
+
+<br>
+<input type="button" value="Clear Translation"
+		onclick="document.getElementById('outputDiv').innerHTML='';">
+   </p>
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>

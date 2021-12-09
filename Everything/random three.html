@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- starterMetric.html
+<!-- This page converts between English and Metric measurements.     -->
+<!-- =============================================================== -->
+
+<html>
+ <head>
+   <title>RANDOM CHAR</title>
+   <script type="text/javascript" src="random.js">
+   </script>
+   <script type="text/javascript">
+	function GenerateSequenceCounter()
+		// Assumes: countBox contains a non-negative integer
+		// Results: displays a countdown from that number in outputDiv
+			{
+			   var sequence,count;
+
+				count = parseFloat(document.getElementById('countBox').value);
+				document.getElementById('outputDiv').innerHTML= '';
+					while (count > 0)
+			{
+				sequence= RandomChar('abcdefghijklmnopqrstuvwxyz') +
+						RandomChar('abcdefghijklmnopqrstuvwxyz') +
+						RandomChar('abcdefghijklmnopqrstuvwxyz');
+				document.getElementById('outputDiv').innerHTML =
+				 document.getElementById('outputDiv').innerHTML + 'Trial Number is' + count +
+					' ---- Random Sequence is <b>' + sequence+ ' </b><br>';
+				count = count - 1;
+			}
+
+				document.getElementById('outputDiv').innerHTML=
+				 document.getElementById('outputDiv').innerHTML + 'All Done!';
+
+			}
+
+
+
+   </script>
+ </head>
+
+ <body>
+ 	<h2> Random Sequence Generator</h2>
+		<p>
+			How Many Trials:
+				<input type="text" id="countBox" size=4 value=10>
+		</p>
+			<input type="button" value="Generate Random Sequence" onclick="GenerateSequenceCounter();">
+
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>
+
+
+
+
