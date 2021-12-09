@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- starterMetric.html
+<!-- This page converts between English and Metric measurements.     -->
+<!-- =============================================================== -->
+
+<html>
+ <head>
+   <title>Starter Metric Conversion</title>
+   <script type="text/javascript" src="convert2.js"></script>
+   <script type="text/javascript">
+
+     function ConvertTocentimeters()
+     
+     // Assumes: inchBox contains a distance in inches
+     // Results: displays the distance in centimeters in outputDiv
+     {
+      var inches, cm;
+
+       inches = parseFloat(document.getElementById('inchBox').value);
+       cm = InchesToCentimeters(inches);
+       document.getElementById('outputDiv').innerHTML =
+         'That is ' + cm + ' centimeters.';
+	}
+      function ConvertToInches()
+	//Assumes: cmBox contains a distance in centimeters
+	// Results: displays the distance in inches in outputDiv
+	{
+		var inches, cm;
+		 cm = parseFloat(document.getElementById('cmBox').value);
+     	 	 Inches = CentimetersToInches(cm);
+      		 document.getElementById('outputDiv').innerHTML =
+        	 'That is ' + Inches + ' Inches.';
+         }
+    function ConvertToPounds()
+       // Assumes: kgBox contains a distance in Kilograms
+       // Returns: displays the distance in Pounds in OutputDiv
+          {
+		var kg,lb;
+		kg= parseFloat(document.getElementById('kgBox').value);
+     	 	 lb = KilogramsToPounds(kg);
+      		 document.getElementById('outputDiv').innerHTML =
+        	 'That is' + lb + 'Pounds.';
+	   }
+    function ConvertToKilograms()
+	// Assumes:lbBox contains a distance in pounds
+	//returns: displays the distance in Kilograms in OutputDiv
+		{
+			var kg,lb;
+				lb= parseFloat(document.getElementById('lbBox').value);
+				Kg=PoundsToKilograms(lb);
+				document.getElementById('outputDiv').innerHTML =
+				'that is' + Kg + 'Kilograms.';
+		}
+
+
+     function ConvertToSquaremeter()
+	//Assumes: SfBox contains a distance in Squarefeet
+	// returns: displays the distance in Squaremeters in OutputDiv
+		{
+			var sf,sm;
+				sf=parseFloat(document.getElementById('sfBox').value);
+				sm=SquarefeetToSquaremeter(sf);
+				document.getElementById('outputDiv').innerHTML = 
+				'that is' + sm + 'Squaremeters.';
+		}
+	
+
+
+      function ConvertToSquarefeet()
+	// Assumes: SmBox contains a distance in Squaremeters
+	// returns: displays the distance in sqaurefeet in OutputDiv
+		{
+			var sf,sm;
+				sm=parseFloat(document.getElementById('smBox').value);
+				sf=SquaremeterToSquarefeet(sm);
+				document.getElementById('outputDiv').innerHTML =
+				'that is' + sf + 'Squarefeet.';	
+		}
+   </script>
+ </head>
+
+ <body>
+ <p>Length in inches:
+      <input type="text" id="inchBox" size=6 value=1>
+      <input type="button" value="Convert to Centimeters"
+             onclick="ConvertTocentimeters();">
+   </p>
+   <p>Length in cm:
+      <input type="text" id="cmBox" size=6 value=1>
+      <input type="button" value="Convert to Inches"
+             onclick="ConvertToInches();">
+</p>
+
+<!new>
+
+ <p>Weight in Kilogram:
+      <input type="text" id="kgBox" size=6 value=1>
+      <input type="button" value="Convert to Pounds"
+             onclick="ConvertToPounds();">
+</p>
+ <p>Weight in Pounds:
+      <input type="text" id="lbBox" size=6 value=1>
+      <input type="button" value="Convert to Kilogram"
+             onclick="ConvertToKilograms();">
+</p>
+ <p>Area in Square Feet:
+      <input type="text" id="sfBox" size=6 value=1>
+      <input type="button" value="Convert to Square Meters"
+             onclick="ConvertToSquaremeter();">
+</p>
+ <p>Area in Square Meters:
+      <input type="text" id="smBox" size=6 value=1>
+      <input type="button" value="Convert to Square Feet"
+             onclick="ConvertToSquarefeet();">
+</p>
+
+
+ 
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>
+
+
+
+
